@@ -68,7 +68,7 @@ class ListParser:
 
     def filter_by_date(self, data):
         return True
-    
+
     def __get_current_page_number(self):
         next_page = self.soup.find("div", attrs = {"class": "dlf"})
         next_page = next_page.find('span', attrs = {"class": "pp"})
